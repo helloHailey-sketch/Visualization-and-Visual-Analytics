@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>map.js</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="d3.min.js"></script>
+    <script src="topojson.min.js"></script>
+    <script src="d3-simple-slider.js"></script>
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+
+    <h1 align=center>中国地理标志产品保护列表</h1>
+    
+<div id="mapButton">
+  <input type="radio" name="mapButton" value="Choropleth" checked> Filled<br>
+  <input type="radio" name="mapButton" value="Bubble"> Bubble<br>
+</div>
+    
+<div class="row align-items-center" id="slider">
+    <div class="col-sm-2"><p id="value-step"></p></div>
+    <div class="col-sm"><div id="slider-step"></div></div>
+  </div>
+
+    <div id='infor'>*境外：2<br>法国：干邑（2009）<br>英国：苏格兰威士忌（2010）</div>
+  </head>
+  <body>
+    <svg width="960" height="500"></svg>
+    <script src="bundle.js"></script>
+  </body>
+</html>
